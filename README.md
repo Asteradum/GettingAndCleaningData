@@ -113,78 +113,81 @@ if the variable contains:
 - 't': denotes time. The original variables "were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise."
 - 'f': denotes that the Fast Fourier Transform was applied.
 
-* Subject - integer. Identifies a person of the study
-* Activity Name - string. Name of the activity measured. The possible values are:
-..* WALKING
-..* WALKING_UPSTAIRS
-..* WALKING_DOWNSTAIRS
-..* SITTING
-..* STANDING
-..* LAYING
-* tBodyAcc mean-X - numeric. Average of the mean of the body acceleration signal in dimension X.
-* tBodyAcc mean-Y - numeric. Average of the mean of the body acceleration signal in dimension Y.
-* tBodyAcc mean-Z - numeric. Average of the mean of the body acceleration signal in dimension Z.
-* tBodyAcc std-X - numeric. Average of the standard deviation of the body acceleration signal in dimension X.
-* tBodyAcc std-Y - numeric. Average of the standard deviation of the body acceleration signal in dimension Y.
-* tBodyAcc std-Z - numeric. Average of the standard deviation of the body acceleration signal in dimension Z.
-* tGravityAcc mean-X - numeric. Average of the mean of the Gravity acceleration in dimension X.
-* tGravityAcc mean-Y - numeric. Average of the mean of the Gravity acceleration in dimension Y.
-* tGravityAcc mean-Z - numeric. Average of the mean of the Gravity acceleration in dimension Z.
-* tGravityAcc std-X - numeric. Average of the standard deviation of the Gravity acceleration in dimension X.
-* tGravityAcc std-Y - numeric. Average of the standard deviation of the Gravity acceleration in dimension Y.
-* tGravityAcc std-Z - numeric. Average of the standard deviation of the Gravity acceleration in dimension Z.
-* tBodyAccJerk mean-X - numeric. Average of the mean of the body acceleration Jerk signal in dimension X.
-* tBodyAccJerk mean-Y - numeric. Average of the mean of the body acceleration Jerk signal in dimension Y.
-* tBodyAccJerk mean-Z - numeric. Average of the mean of the body acceleration Jerk signal in dimension Z.
-* tBodyAccJerk std-X - numeric. Average of the standard deviation of the body acceleration Jerk signal in dimension X.
-* tBodyAccJerk std-Y - numeric. Average of the standard deviation of the body acceleration Jerk signal in dimension Y.
-* tBodyAccJerk std-Z - numeric. Average of the standard deviation of the body acceleration Jerk signal in dimension Z.
-* tBodyGyro mean-X - numeric. Average of the mean of the body gyroscope Jerk signal in dimension X.
-* tBodyGyro mean-Y - numeric. Average of the mean of the body gyroscope Jerk signal in dimension Y.
-* tBodyGyro mean-Z - numeric. Average of the mean of the body gyroscope Jerk signal in dimension Z.
-* tBodyGyro std-X - numeric. Average of the standard deviation of the body gyroscope Jerk signal in dimension X.
-* tBodyGyro std-Y - numeric. Average of the standard deviation of the body gyroscope Jerk signal in dimension Y.
-* tBodyGyro std-Z - numeric. Average of the standard deviation of the body gyroscope Jerk signal in dimension Z.
-* tBodyGyroJerk mean-X - numeric. Average of the mean of the body gyroscope Jerk signal in dimension X.
-* tBodyGyroJerk mean-Y - numeric. Average of the mean of the body gyroscope Jerk signal in dimension Y.
-* tBodyGyroJerk mean-Z - numeric. Average of the mean of the body gyroscope Jerk signal in dimension Z.
-* tBodyGyroJerk std-X - numeric. Average of the standard deviation of the body gyroscope Jerk signal in dimension X.
-* tBodyGyroJerk std-Y - numeric. Average of the standard deviation of the body gyroscope Jerk signal in dimension Y.
-* tBodyGyroJerk std-Z - numeric. Average of the standard deviation of the body gyroscope Jerk signal in dimension Z.
-* tBodyAccMag mean - numeric. Average of the mean of Magnitude of the three-dimensional variables the body acceleration signal.
-* tBodyAccMag std - numeric. Average of the standard deviation of Magnitude of the three-dimensional variables the body acceleration signal.
-* tBodyAccJerkMag mean - numeric. Average of the mean of Magnitude of the three-dimensional variables the body acceleration Jerk signal.
-* tBodyAccJerkMag std - numeric. Average of the standard deviation of Magnitude of the three-dimensional variables the body acceleration Jerk signal.
-* tGravityAccMag mean - numeric. Average of the mean of Magnitude of the three-dimensional variables the gravity acceleration signal.
-* tGravityAccMag std - numeric. Average of the standard deviation of Magnitude of the three-dimensional variables the gravitx acceleration signal.
-* tBodyGyroMag mean - numeric. Average of the mean of Magnitude of the three-dimensional variables the body gyroscope signal.
-* tBodyGyroMag std - numeric. Average of the standard deviation of Magnitude of the three-dimensional variables the body gyroscope signal.
-* tBodyGyroJerkMag mean - numeric. Average of the mean of Magnitude of the three-dimensional variables the body gyroscope Jerk signal.
-* tBodyGyroJerkMag std - numeric. Average of the standard deviation of Magnitude of the three-dimensional variables the body gyroscope Jerk signal.
-* fBodyAcc mean-X - numeric. Average of the mean of the FFT for the body acceleration signal in dimension X.
-* fBodyAcc mean-Y - numeric. Average of the mean of the FFT for the body acceleration signal in dimension Y.
-* fBodyAcc mean-Z - numeric. Average of the mean of the FFT for the body acceleration signal in dimension Z.
-* fBodyAcc std-X - numeric. Average of the standard deviation of the FFT for the body acceleration signal in dimension X.
-* fBodyAcc std-Y - numeric. Average of the standard deviation of the FFT for the body acceleration signal in dimension Y.
-* fBodyAcc std-Z - numeric. Average of the standard deviation of the FFT for the body acceleration signal in dimension Z.
-* fBodyAccJerk mean-X - numeric. Average of the mean of the FFT for the body acceleration Jerk signal in dimension X.
-* fBodyAccJerk mean-Y - numeric. Average of the mean of the FFT for the body acceleration Jerk signal in dimension Y.
-* fBodyAccJerk mean-Z - numeric. Average of the mean of the FFT for the body acceleration Jerk signal in dimension Z.
-* fBodyAccJerk std-X - numeric. Average of the standard deviation of the FFT for the body acceleration Jerk signal in dimension X.
-* fBodyAccJerk std-Y - numeric. Average of the standard deviation of the FFT for the body acceleration Jerk signal in dimension Y.
-* fBodyAccJerk std-Z - numeric. Average of the standard deviation of the FFT for the body acceleration Jerk signal in dimension Z.
-* fBodyGyro mean-X - numeric. Average of the mean of the FFT for the body gyroscope signal in dimension X.
-* fBodyGyro mean-Y - numeric. Average of the mean of the FFT for the body gyroscope signal in dimension Y.
-* fBodyGyro mean-Z - numeric. Average of the mean of the FFT for the body gyroscope signal in dimension Z.
-* fBodyGyro std-X - numeric. Average of the standard deviation of the FFT for the body gyroscope signal in dimension X.
-* fBodyGyro std-Y - numeric. Average of the standard deviation of the FFT for the body gyroscope signal in dimension Y.
-* fBodyGyro std-Z - numeric. Average of the standard deviation of the FFT for the body gyroscope signal in dimension Z.
-* fBodyAccMag mean - numeric. Average of the mean of the FFT for the Magnitude of the three-dimensional variables of the body acceleration signal.
-* fBodyAccMag std - numeric. Average of the standard deviation of the FFT for the Magnitude of the three-dimensional variables of the body acceleration signal.
-* fBodyAccJerkMag mean - numeric. Average of the mean of the FFT for the Magnitude of the three-dimensional variables of the body acceleration Jerk signal.
-* fBodyAccJerkMag std - numeric. Average of the standard deviation of the FFT for the Magnitude of the three-dimensional variables of the body acceleration Jerk signal.
-* fBodyGyroMag mean - numeric. Average of the mean of the FFT for the Magnitude of the three-dimensional variables of the body gyroscope signal.
-* fBodyGyroMag std - numeric. Average of the standard deviation of the FFT for the Magnitude of the three-dimensional variables of the body gyroscope signal.
-* fBodyGyroJerkMag mean - numeric. Average of the mean of the FFT for the Magnitude of the three-dimensional variables of the body gyroscope Jerk signal.
-* fBodyGyroJerkMag std - numeric. Average of the standard deviation of the FFT for the Magnitude of the three-dimensional variables of the body gyroscope Jerk signal.
+The possible values for Variable Activity Name are:
+* WALKING
+* WALKING_UPSTAIRS
+* WALKING_DOWNSTAIRS
+* SITTING
+* STANDING
+* LAYING
 
+| Variable Name|Type|Description|
+| -------------|:-------:|:------------------------------------------------:|
+| Subject | integer. Identifies a person of the study |
+| Activity Name | string. Name of the activity measured. The possible values are |
+| tBodyAcc mean-X | numeric | Average of the mean of the body acceleration signal in dimension X |
+| tBodyAcc mean-Y | numeric | Average of the mean of the body acceleration signal in dimension Y |
+| tBodyAcc mean-Z | numeric | Average of the mean of the body acceleration signal in dimension Z |
+| tBodyAcc std-X | numeric | Average of the standard deviation of the body acceleration signal in dimension X |
+| tBodyAcc std-Y | numeric | Average of the standard deviation of the body acceleration signal in dimension Y |
+| tBodyAcc std-Z | numeric | Average of the standard deviation of the body acceleration signal in dimension Z |
+| tGravityAcc mean-X | numeric | Average of the mean of the Gravity acceleration in dimension X |
+| tGravityAcc mean-Y | numeric | Average of the mean of the Gravity acceleration in dimension Y |
+| tGravityAcc mean-Z | numeric | Average of the mean of the Gravity acceleration in dimension Z |
+| tGravityAcc std-X | numeric | Average of the standard deviation of the Gravity acceleration in dimension X |
+| tGravityAcc std-Y | numeric | Average of the standard deviation of the Gravity acceleration in dimension Y |
+| tGravityAcc std-Z | numeric | Average of the standard deviation of the Gravity acceleration in dimension Z |
+| tBodyAccJerk mean-X | numeric | Average of the mean of the body acceleration Jerk signal in dimension X |
+| tBodyAccJerk mean-Y | numeric | Average of the mean of the body acceleration Jerk signal in dimension Y |
+| tBodyAccJerk mean-Z | numeric | Average of the mean of the body acceleration Jerk signal in dimension Z |
+| tBodyAccJerk std-X | numeric | Average of the standard deviation of the body acceleration Jerk signal in dimension X |
+| tBodyAccJerk std-Y | numeric | Average of the standard deviation of the body acceleration Jerk signal in dimension Y |
+| tBodyAccJerk std-Z | numeric | Average of the standard deviation of the body acceleration Jerk signal in dimension Z |
+| tBodyGyro mean-X | numeric | Average of the mean of the body gyroscope Jerk signal in dimension X |
+| tBodyGyro mean-Y | numeric | Average of the mean of the body gyroscope Jerk signal in dimension Y |
+| tBodyGyro mean-Z | numeric | Average of the mean of the body gyroscope Jerk signal in dimension Z |
+| tBodyGyro std-X | numeric | Average of the standard deviation of the body gyroscope Jerk signal in dimension X |
+| tBodyGyro std-Y | numeric | Average of the standard deviation of the body gyroscope Jerk signal in dimension Y |
+| tBodyGyro std-Z | numeric | Average of the standard deviation of the body gyroscope Jerk signal in dimension Z |
+| tBodyGyroJerk mean-X | numeric | Average of the mean of the body gyroscope Jerk signal in dimension X |
+| tBodyGyroJerk mean-Y | numeric | Average of the mean of the body gyroscope Jerk signal in dimension Y |
+| tBodyGyroJerk mean-Z | numeric | Average of the mean of the body gyroscope Jerk signal in dimension Z |
+| tBodyGyroJerk std-X | numeric | Average of the standard deviation of the body gyroscope Jerk signal in dimension X |
+| tBodyGyroJerk std-Y | numeric | Average of the standard deviation of the body gyroscope Jerk signal in dimension Y |
+| tBodyGyroJerk std-Z | numeric | Average of the standard deviation of the body gyroscope Jerk signal in dimension Z |
+| tBodyAccMag mean | numeric | Average of the mean of Magnitude of the three-dimensional variables the body acceleration signal |
+| tBodyAccMag std | numeric | Average of the standard deviation of Magnitude of the three-dimensional variables the body acceleration signal |
+| tBodyAccJerkMag mean | numeric | Average of the mean of Magnitude of the three-dimensional variables the body acceleration Jerk signal |
+| tBodyAccJerkMag std | numeric | Average of the standard deviation of Magnitude of the three-dimensional variables the body acceleration Jerk signal |
+| tGravityAccMag mean | numeric | Average of the mean of Magnitude of the three-dimensional variables the gravity acceleration signal |
+| tGravityAccMag std | numeric | Average of the standard deviation of Magnitude of the three-dimensional variables the gravitx acceleration signal |
+| tBodyGyroMag mean | numeric | Average of the mean of Magnitude of the three-dimensional variables the body gyroscope signal |
+| tBodyGyroMag std | numeric | Average of the standard deviation of Magnitude of the three-dimensional variables the body gyroscope signal |
+| tBodyGyroJerkMag mean | numeric | Average of the mean of Magnitude of the three-dimensional variables the body gyroscope Jerk signal |
+| tBodyGyroJerkMag std | numeric | Average of the standard deviation of Magnitude of the three-dimensional variables the body gyroscope Jerk signal |
+| fBodyAcc mean-X | numeric | Average of the mean of the FFT for the body acceleration signal in dimension X |
+| fBodyAcc mean-Y | numeric | Average of the mean of the FFT for the body acceleration signal in dimension Y |
+| fBodyAcc mean-Z | numeric | Average of the mean of the FFT for the body acceleration signal in dimension Z |
+| fBodyAcc std-X | numeric | Average of the standard deviation of the FFT for the body acceleration signal in dimension X |
+| fBodyAcc std-Y | numeric | Average of the standard deviation of the FFT for the body acceleration signal in dimension Y |
+| fBodyAcc std-Z | numeric | Average of the standard deviation of the FFT for the body acceleration signal in dimension Z |
+| fBodyAccJerk mean-X | numeric | Average of the mean of the FFT for the body acceleration Jerk signal in dimension X |
+| fBodyAccJerk mean-Y | numeric | Average of the mean of the FFT for the body acceleration Jerk signal in dimension Y |
+| fBodyAccJerk mean-Z | numeric | Average of the mean of the FFT for the body acceleration Jerk signal in dimension Z |
+| fBodyAccJerk std-X | numeric | Average of the standard deviation of the FFT for the body acceleration Jerk signal in dimension X |
+| fBodyAccJerk std-Y | numeric | Average of the standard deviation of the FFT for the body acceleration Jerk signal in dimension Y |
+| fBodyAccJerk std-Z | numeric | Average of the standard deviation of the FFT for the body acceleration Jerk signal in dimension Z |
+| fBodyGyro mean-X | numeric | Average of the mean of the FFT for the body gyroscope signal in dimension X |
+| fBodyGyro mean-Y | numeric | Average of the mean of the FFT for the body gyroscope signal in dimension Y |
+| fBodyGyro mean-Z | numeric | Average of the mean of the FFT for the body gyroscope signal in dimension Z |
+| fBodyGyro std-X | numeric | Average of the standard deviation of the FFT for the body gyroscope signal in dimension X |
+| fBodyGyro std-Y | numeric | Average of the standard deviation of the FFT for the body gyroscope signal in dimension Y |
+| fBodyGyro std-Z | numeric | Average of the standard deviation of the FFT for the body gyroscope signal in dimension Z |
+| fBodyAccMag mean | numeric | Average of the mean of the FFT for the Magnitude of the three-dimensional variables of the body acceleration signal |
+| fBodyAccMag std | numeric | Average of the standard deviation of the FFT for the Magnitude of the three-dimensional variables of the body acceleration signal |
+| fBodyAccJerkMag mean | numeric | Average of the mean of the FFT for the Magnitude of the three-dimensional variables of the body acceleration Jerk signal |
+| fBodyAccJerkMag std | numeric | Average of the standard deviation of the FFT for the Magnitude of the three-dimensional variables of the body acceleration Jerk signal |
+| fBodyGyroMag mean | numeric | Average of the mean of the FFT for the Magnitude of the three-dimensional variables of the body gyroscope signal |
+| fBodyGyroMag std | numeric | Average of the standard deviation of the FFT for the Magnitude of the three-dimensional variables of the body gyroscope signal |
+| fBodyGyroJerkMag mean | numeric | Average of the mean of the FFT for the Magnitude of the three-dimensional variables of the body gyroscope Jerk signal |
+| fBodyGyroJerkMag std | numeric | Average of the standard deviation of the FFT for the Magnitude of the three-dimensional variables of the body gyroscope Jerk signal |
